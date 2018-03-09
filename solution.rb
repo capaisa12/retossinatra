@@ -1,4 +1,4 @@
-require 'sinatra' #Siempre al usar sinatra lo primero que se hace es requerir la libreria
+require 'sinatra'
 
 get '/' do
   if (params[:nombre]==nil || params[:nombre]=={})
