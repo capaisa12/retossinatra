@@ -1,7 +1,21 @@
-<h1>Hola dime a quien saludar</h1>
-<form action='/saludo' method='post'>
-  <input type="text" name="name">
-  <button type="submit" >¡Hola !</button>
-
-
-</form>
+<html>
+<head>
+  <style>
+    input[type=submit] {
+      padding:5px 15px;
+      background:#ccc;
+      border:0 none;
+      cursor:pointer;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      }
+  </style>
+</head>
+<body>
+  <h1>Hola dime a quien saludar</h1>
+  <form action='/saludo' method='post'>
+    <input type="text" name="name">
+    <button type="submit" >¡Hola !</button>
+  </form>
+</body>
+</html>
