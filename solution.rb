@@ -1,18 +1,10 @@
-require 'sinatra'
+require "sinatra"
 
 get '/' do
-  "Hola desconocido!"
+  erb :index
 end
 
-
-get '/makers' do
-  "Hola desconocido!"
-end
-
-get '/makers/:nombre' do
-  if (params[:nombre]==nil || params[:nombre]=={} || params[:nombre]=="")
-    "Hola desconocido!"
-  else
-    "<h1>Hola "+"#{params[:nombre]}!</h1>".capitalize
-  end
+post '/saludo' do
+  @name=params[:name]
+  erb :saludo
 end
