@@ -5,6 +5,5 @@ get '/' do
 end
 
 post '/saludo' do
-  @name=params[:name]
-  erb :saludo
+  "<h1>¡Hola #{params[:name]}!</h1>"
 end
