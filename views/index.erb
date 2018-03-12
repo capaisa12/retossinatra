@@ -1,21 +1,8 @@
-<html>
-<head>
-  <style>
-    input[type=submit] {
-      padding:5px 15px;
-      background:#ccc;
-      border:0 none;
-      cursor:pointer;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      }
-  </style>
-</head>
-<body>
-  <h1>Hola dime a quien saludar</h1>
-  <form action='/saludo' method='post'>
-    <input type="text" name="name">
-    <input type="submit">
-  </form>
-</body>
-</html>
+  <h1>Hola</h1>
+    <% (1..50).each do |i| %>
+      <% if i%2==0%>
+        <p><%=i%> Soy Par!</p>
+      <%else%>
+        <p><%=i%> Soy Impar!</p>
+      <% end %>
+    <% end %>
